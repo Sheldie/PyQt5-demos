@@ -1,0 +1,112 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'MainWindow.ui'
+#
+# Created by: PyQt5 UI code generator 5.13.0
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_Login(object):
+    def setupUi(self, Login):
+        Login.setObjectName("Login")
+        Login.setEnabled(True)
+        Login.resize(500, 250)
+        self.centralwidget = QtWidgets.QWidget(Login)
+        self.centralwidget.setObjectName("centralwidget")
+        self.LoginButton = QtWidgets.QPushButton(self.centralwidget)
+        self.LoginButton.setGeometry(QtCore.QRect(370, 50, 50, 30))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setBold(True)
+        font.setWeight(75)
+        self.LoginButton.setFont(font)
+        self.LoginButton.setObjectName("LoginButton")
+        self.ResetButton = QtWidgets.QPushButton(self.centralwidget)
+        self.ResetButton.setGeometry(QtCore.QRect(370, 90, 50, 30))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setBold(True)
+        font.setWeight(75)
+        self.ResetButton.setFont(font)
+        self.ResetButton.setObjectName("ResetButton")
+        self.UsernameEdit = QtWidgets.QLineEdit(self.centralwidget)
+        self.UsernameEdit.setGeometry(QtCore.QRect(150, 50, 150, 30))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(11)
+        self.UsernameEdit.setFont(font)
+        self.UsernameEdit.setText("")
+        self.UsernameEdit.setObjectName("UsernameEdit")
+        self.PasswordEdit = QtWidgets.QLineEdit(self.centralwidget)
+        self.PasswordEdit.setGeometry(QtCore.QRect(150, 90, 150, 30))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(11)
+        self.PasswordEdit.setFont(font)
+        self.PasswordEdit.setCursor(QtGui.QCursor(QtCore.Qt.IBeamCursor))
+        self.PasswordEdit.setFocusPolicy(QtCore.Qt.StrongFocus)
+        self.PasswordEdit.setToolTip("")
+        self.PasswordEdit.setText("")
+        self.PasswordEdit.setEchoMode(QtWidgets.QLineEdit.Password)
+        self.PasswordEdit.setObjectName("PasswordEdit")
+        self.UsernameLabel = QtWidgets.QLabel(self.centralwidget)
+        self.UsernameLabel.setGeometry(QtCore.QRect(80, 50, 60, 30))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(11)
+        font.setBold(True)
+        font.setUnderline(False)
+        font.setWeight(75)
+        self.UsernameLabel.setFont(font)
+        self.UsernameLabel.setStyleSheet("")
+        self.UsernameLabel.setObjectName("UsernameLabel")
+        self.PasswordLabel = QtWidgets.QLabel(self.centralwidget)
+        self.PasswordLabel.setGeometry(QtCore.QRect(80, 90, 60, 30))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(11)
+        font.setBold(True)
+        font.setWeight(75)
+        self.PasswordLabel.setFont(font)
+        self.PasswordLabel.setObjectName("PasswordLabel")
+        self.Tips = QtWidgets.QWidget(self.centralwidget)
+        self.Tips.setGeometry(QtCore.QRect(0, 130, 500, 20))
+        self.Tips.setObjectName("Tips")
+        self.TipLabel = QtWidgets.QLabel(self.Tips)
+        self.TipLabel.setGeometry(QtCore.QRect(140, 0, 170, 20))
+        font = QtGui.QFont()
+        font.setFamily("Arial")
+        font.setPointSize(10)
+        font.setBold(True)
+        font.setWeight(75)
+        self.TipLabel.setFont(font)
+        self.TipLabel.setStyleSheet("*{\n"
+"    color:rgb(255, 0, 0);\n"
+"    \n"
+"}")
+        self.TipLabel.setText("")
+        self.TipLabel.setAlignment(QtCore.Qt.AlignCenter)
+        self.TipLabel.setObjectName("TipLabel")
+        Login.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(Login)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 500, 18))
+        self.menubar.setObjectName("menubar")
+        Login.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(Login)
+        self.statusbar.setObjectName("statusbar")
+        Login.setStatusBar(self.statusbar)
+
+        self.retranslateUi(Login)
+        QtCore.QMetaObject.connectSlotsByName(Login)
+
+    def retranslateUi(self, Login):
+        _translate = QtCore.QCoreApplication.translate
+        Login.setWindowTitle(_translate("Login", "Login"))
+        self.LoginButton.setText(_translate("Login", "LOGIN"))
+        self.ResetButton.setText(_translate("Login", "RESET"))
+        self.UsernameLabel.setText(_translate("Login", "Username"))
+        self.PasswordLabel.setText(_translate("Login", "Password"))
